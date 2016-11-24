@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+
+    "name": "Chromium Blacklist",
+    "description": "Redirect websites from the blacklist to localhost.",
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+            "matches": ["https://www.reddit.com/*"],
+            "js": ["redirect.js"]
+        }
+    ]
+}
+
